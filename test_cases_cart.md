@@ -1,7 +1,11 @@
-# Test Cases – Login Functionality
+# Manual Test Cases – Add to Cart Functionality
 
-| Test Case ID | Title                       | Steps to Reproduce                                                                 | Expected Result                  | Status  |
-|--------------|-----------------------------|-------------------------------------------------------------------------------------|----------------------------------|---------|
-| TC001        | Valid login                 | 1. Go to the homepage. <br> 2. Click Login. <br> 3. Enter valid email/password. <br> 4. Click Login. | User is logged in successfully. | Pass/Fail |
-| TC002        | Invalid password            | Enter valid email and invalid password                                             | Error message is shown.          |         |
-| TC003        | Empty email and password    | Submit the form with no credentials                                                | Error message prompts for input. |         |
+This document contains manual test cases for adding items to the shopping cart on [https://automationexercise.com](https://automationexercise.com).
+
+| Test Case ID | Title                            | Steps to Reproduce                                                                                     | Expected Result                                            | Status     |
+|--------------|----------------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------|------------|
+| TC009        | Add single item to cart          | 1. Navigate to homepage. <br> 2. Hover over an item. <br> 3. Click 'Add to Cart'. <br> 4. Click 'View Cart'. | Item is visible in the cart with correct name and quantity. | Pass/Fail |
+| TC010        | Add multiple different items     | 1. Add one item to cart. <br> 2. Return to homepage. <br> 3. Add another different item. <br> 4. View cart. | Both items appear in the cart.                            | Pass/Fail |
+| TC011        | Add same item multiple times     | 1. Add the same item to cart twice. <br> 2. View cart.                                                   | Quantity increases; not duplicated as separate items.       | Pass/Fail |
+| TC012        | Remove item from cart            | 1. Add an item to cart. <br> 2. View cart. <br> 3. Click delete/remove icon.                             | Item is removed from the cart.                             | Pass/Fail |
+| TC013        | Cart persists after page refresh | 1. Add item to cart. <br> 2. Refresh the cart or homepage.                                               | Cart retains added items.                                  | Pass/Fail |
